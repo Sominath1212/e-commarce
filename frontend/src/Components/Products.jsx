@@ -1,9 +1,22 @@
-import React from 'react'
-
+import axios from "axios";
+import { useState } from "react";
 function Products() {
+  const [products, setProducts] = useState([]);
+  try {
+    axios.get("https://fakestoreapi.com/products").then((response) => {
+      console.log(response.data);
+      setProducts(response.data);
+    });
+  } catch (error) {
+    console.log(error);
+  }
   return (
-    <div>Products</div>
-  )
+    <div>
+      {products.map((product) => {
+        return <div>{product.id}</div>;
+      })}
+    </div>
+  );
 }
 
-export default Products
+export default Products;
