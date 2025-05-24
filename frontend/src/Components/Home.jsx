@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <div>
-        <div className="   w-full sm:h-[70vh] h-[40vh]   flex flex-col items-center justify-center sm:relative sm:pt-10">
+        <div className="   w-full sm:h-[50vh] h-[40vh]   flex flex-col items-center justify-center sm:relative sm:pt-10">
           <Link to="/">
             <div>
               <h1 className="flex  drop-shadow-lg text-3xl font-bold  cursor-pointer items-center justify-center">
