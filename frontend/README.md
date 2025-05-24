@@ -12,8 +12,8 @@ A responsive e-commerce web application built with **React.js**, **Firebase**, a
 
 ## 📁 Project Structure
 
-
 ![Folder Structure](../frontend/image/folderstructure.png)
+
 ## 🔑 Features
 
 - ✅ User Authentication (Signup / Login with Firebase)
@@ -31,11 +31,7 @@ Sominath Girnare
 Computer Science Graduate | MERN Developer
 LinkedIn | GitHub
 
-
-
 ## ⚙️ Getting Started
-
-
 
 ### 1. Clone the repository
 
@@ -49,3 +45,4 @@ npm run dev: Run development server
 
 npm run build: Build for production
 
+```
