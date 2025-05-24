@@ -1,12 +1,51 @@
-# React + Vite
+# 🛒 e-cart.com
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive e-commerce web application built with **React.js**, **Firebase**, and **Tailwind CSS**. This platform allows users to browse products, manage a cart, sign up/login, and securely handle routing with protected pages.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend**: React.js, Tailwind CSS, React Router
+- **Authentication & Backend Services**: Firebase
+- **Module Bundler**: Vite
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Project Structure
+
+
+![Folder Structure](../frontend/image/folderstructure.png)
+## 🔑 Features
+
+- ✅ User Authentication (Signup / Login with Firebase)
+- ✅ Add to Cart / View Cart
+- ✅ Protected Routes
+- ✅ Responsive Design
+- ✅ Firebase Integration
+- ✅ Modular and Scalable File Structure
+
+---
+
+### 🧑‍💻 Author
+
+Sominath Girnare
+Computer Science Graduate | MERN Developer
+LinkedIn | GitHub
+
+
+
+## ⚙️ Getting Started
+
+
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Sominath1212/e-commarce.git
+
+npm install
+
+🧪 Scripts
+npm run dev: Run development server
+
+npm run build: Build for production
+
