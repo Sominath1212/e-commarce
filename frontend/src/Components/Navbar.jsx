@@ -7,7 +7,7 @@ import { AuthContext } from "../context/UserAuth";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 function Navbar() {
-  const { cartItems } = useContext(DataContext);
+  const { cartItems, setCartItems } = useContext(DataContext);
   const { logout } = useContext(AuthContext);
   const navigate = useNavigate();
   const prdct = cartItems.length;
@@ -71,6 +71,7 @@ function Navbar() {
           <MdLogout
             onClick={() => {
               logout();
+              setCartItems([]);
               navigate("/login");
             }}
             className="cursor-pointer"

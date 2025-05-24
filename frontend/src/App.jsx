@@ -18,27 +18,25 @@ function App() {
         <DataProvider>
           <Navbar />
           <Routes>
-            <Route
-              path="/"
-              element={
-                <ProtectedRoute>
-                  <Route path="/" element={<Home />} />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/cart"
-              element={
-                <ProtectedRoute>
-                  <Route path="/cart" element={<Cart />} />
-                </ProtectedRoute>
-              }
-            ></Route>
-
+            <Route path="/" element={<Home />} />
+            <Route element={<ProtectedRoute />}>
+              <Route path="/cart" element={<Cart />} />
+            </Route>
             <Route path="/products" element={<Products />} />
             <Route path="/login" element={<Login />} />
             <Route path="/sign-up" element={<SignUp />} />
             <Route path="/cartpage:/id" element={<CartPage />} />
+
+            {/* 
+             <Route element={<PrivateRoute />}>
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/success" element={<Success />} />
+              <Route path="/create-gig" element={<CreateGig />} />
+              <Route path="/forget" element={<ForgetPassword />} />
+              <Route path="/user/:id" element={<UserProfilePage />} />
+              <Route path="/gig/:id" element={<GigCart />} />
+              <Route path="/review/:id" element={<Review />} />
+            </Route> */}
           </Routes>
           {/* <Footer></Footer> */}
           <ToastContainer />

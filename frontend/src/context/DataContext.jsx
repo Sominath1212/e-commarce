@@ -42,7 +42,7 @@ const DataProvider = ({ children }) => {
   };
 
   return (
-    <DataContext.Provider value={{ cartItems, addCartItem, removeCartItem }}>
+    <DataContext.Provider value={{ cartItems, addCartItem, removeCartItem ,setCartItems}}>
       {children}
     </DataContext.Provider>
   );
